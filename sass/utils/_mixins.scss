@@ -1,3 +1,14 @@
 /////////////////
 //// mixins ////
 ///////////////
+
+@mixin FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin FlexVerticalCenter {
+    display: flex;
+    justify-content: center;
+}

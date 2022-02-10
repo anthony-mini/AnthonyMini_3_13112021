@@ -277,8 +277,49 @@ li {
 /*************
     header
 **************/
-h1 {
+header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.279);
+}
+header a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 42%;
+  height: auto;
+}
+
+/*************
+    maps section
+**************/
+.search-bar {
+  background-color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 100%;
+  box-shadow: 0px 3px 5px 0px #CCCCCC inset;
+}
+.search-bar__icons {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.search-bar__input {
+  background-color: #EAEAEA;
+  border: none;
+  text-align: start;
+  width: 35%;
+}
+.search-bar__input::placeholder {
   color: black;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 /*************
