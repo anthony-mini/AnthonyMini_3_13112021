@@ -23,6 +23,11 @@
     justify-content: center;
 }
 
+// Box-shadow // 
+
+@mixin box-shadow {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.30);
+}
 
 // button explore and order // 
 
@@ -31,12 +36,7 @@
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 }
 
-@mixin button-explore-order {
-    @include background-button;
-    color: white;
-    border: none;
-    height: 50px;
-    width: 220px;
-    border-radius: 100px;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.30);
+@mixin margin-inline {
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
 }

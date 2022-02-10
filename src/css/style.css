@@ -276,23 +276,20 @@ li {
 /*************
     Typography
 **************/
-h2 {
-  text-align: center;
-  margin: 0 0 20px 0;
-}
-
 /*************
     Explore and 
     Order Button
 **************/
 button {
   background: linear-gradient(0deg, #9356DC 0%, #FF79D1 100%);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   color: white;
   border: none;
   height: 50px;
   width: 220px;
   border-radius: 100px;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  font-weight: 450;
+  font-size: 16px;
 }
 
 /*************
@@ -301,7 +298,7 @@ button {
 header {
   display: flex;
   justify-content: center;
-  height: 60px;
+  height: 55px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.279);
 }
 header a {
@@ -311,7 +308,7 @@ header a {
 }
 
 img {
-  width: 42%;
+  width: 160px;
   height: auto;
 }
 
@@ -323,24 +320,23 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 42px;
+  height: 45px;
   width: 100%;
   box-shadow: 0px 3px 5px 0px #CCCCCC inset;
 }
 .search-bar__icons {
-  font-size: 14px;
-  margin-right: 10px;
+  font-size: 15px;
 }
 .search-bar__input {
   background-color: #EAEAEA;
   border: none;
-  text-align: start;
-  width: 35%;
+  text-align: center;
+  width: 40%;
 }
 .search-bar__input::placeholder {
   color: black;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 /*************
@@ -353,11 +349,20 @@ img {
   align-items: center;
   background-color: #F6F6F6;
   box-shadow: 0px 0px 98px 1px rgba(0, 0, 0, 0.03) inset;
-  height: 250px;
+  height: auto;
+  padding: 40px 0px 50px 0;
+}
+.container-explore h2 {
+  margin: 0 40px 0 40px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
 }
 .container-explore p {
+  margin: 15px 30px 25px 30px;
   text-align: center;
-  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 /*************
@@ -368,7 +373,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: auto;
 }
 .container-list ul {
   padding: 0;
