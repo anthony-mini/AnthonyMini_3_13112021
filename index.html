@@ -4,10 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ohmyfood</title>
-        <meta name="description" content="Lorem" />
+        <meta name="description" content="Ohmyfood, réservez le menu gastronomique qui vous convient." />
 
         <!-- Favicon -->
-        <link rel="icon" href="src/img/favicon/" />
+        <link rel="icon" href="src/img/favicon/favicon.ico" />
 
         <!-- Link style -->
         <link rel="stylesheet" href="src/css/style.css" type="text/css">
@@ -22,11 +22,32 @@
     </head>
    
     <body>
+        
         <!-- Header -->
+        
         <header>
-            <h1>Hello World !</h1>
+            <a href="index.html"> 
+                <img src="src/img/logo/ohmyfood.png" alt="Logo principal d'Ohmyfood">
+            </a>
         </header>
         
+        <!-- Maps Section  -->
+
+        <div class="search-bar">
+            <span class="search-bar__icons"> 
+                <i class="fas fa-map-marker-alt"></i>
+            </span>
+            <input class="search-bar__input" type="search" name="city" value="Paris, Belleville" placeholder="Votre ville">
+        </div>
+
+        <!-- About Section -->
+        
+        <div class="container-explore">
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnnés par nos soins.</p>
+            <button class="container-explore__btn">Explorer nos restaurants</button>
+        </div>
+
         <!-- Main -->
         <main>
             
