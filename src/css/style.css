@@ -2,7 +2,6 @@
 /*************
     reset
 **************/
-/*- normalize source : https://necolas.github.io/normalize.css/ ─*/
 * {
   box-sizing: border-box;
   /*- ─*/
@@ -275,6 +274,28 @@ li {
 }
 
 /*************
+    Typography
+**************/
+h2 {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+/*************
+    Explore and 
+    Order Button
+**************/
+button {
+  background: linear-gradient(0deg, #9356DC 0%, #FF79D1 100%);
+  color: white;
+  border: none;
+  height: 50px;
+  width: 220px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*************
     header
 **************/
 header {
@@ -295,7 +316,7 @@ img {
 }
 
 /*************
-    maps section
+    section : search
 **************/
 .search-bar {
   background-color: #EAEAEA;
@@ -320,6 +341,37 @@ img {
   color: black;
   font-weight: 400;
   font-size: 15px;
+}
+
+/*************
+    section : explore
+**************/
+.container-explore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  box-shadow: 0px 0px 98px 1px rgba(0, 0, 0, 0.03) inset;
+  height: 250px;
+}
+.container-explore p {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+/*************
+    section : function
+**************/
+.container-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.container-list ul {
+  padding: 0;
 }
 
 /*************

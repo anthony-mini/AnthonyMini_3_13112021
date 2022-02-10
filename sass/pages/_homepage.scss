@@ -1,5 +1,5 @@
 /*************
-    maps section
+    section : search
 **************/
 
 .search-bar {
@@ -28,4 +28,33 @@
     }   
 }
 
+/*************
+    section : explore
+**************/
 
+.container-explore {
+    @include FlexColumnCenter;
+    background-color: $explore-background-color;
+    box-shadow: 0px 0px 98px 1px rgba(0, 0, 0, 0.03) inset;
+    height: 250px;
+
+    p {
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+
+   
+}
+
+/*************
+    section : function
+**************/
+
+.container-list {
+    @include FlexColumnCenter;
+    height : 200px;
+
+    ul {
+        padding : 0;
+    }
+}
