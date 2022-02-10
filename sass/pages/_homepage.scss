@@ -58,11 +58,29 @@
     section : function
 **************/
 
-.container-list {
-    @include FlexColumnCenter;
+.container-opt {
+    @include FlexColumn;
     height : auto;
+    width: 100%;
+    padding: 0 20px 0 20px;
+}
 
-    ul {
-        padding : 0;
+.opt-list {
+    padding: 0;
+
+    &__step {
+        @include FlexColumnCenter;
+    }
+
+    &__btn {
+        margin: 10px 0;
+    }
+  
+    &__number {
+        background-color: $primary-color;
+        padding: 3px 9px;
+        border-radius: 500px;
+        color: white;
+        position: absolute;
     }
 }

@@ -4,8 +4,8 @@
     Order Button
 **************/
 
-button {
-    @include background-button;
+.container-explore__btn {
+    @include background-btn-explore;
     @include box-shadow;
     color: white;
     border: none;
@@ -14,4 +14,18 @@ button {
     border-radius: 100px;
     font-weight: 450;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.opt-list__btn {
+    background-color: $opt-background-color;
+    @include box-shadow;
+    color: black;
+    border: none;
+    height: 60px;
+    width: 100%;
+    border-radius: 15px;
+    font-weight: 450;
+    font-size: 16px;
+    cursor: pointer;
 }
