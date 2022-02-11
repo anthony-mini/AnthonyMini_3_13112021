@@ -62,21 +62,17 @@
     @include FlexColumn;
     height : auto;
     width: 100%;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 20px 20px;
 }
 
 .opt-list {
-    padding: 0;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
 
     &__step {
        display: flex;
        align-items: center;
-    }
-
-    &__btn {
-        margin: 10px 0;
     }
   
     &__number {
@@ -85,6 +81,29 @@
         border-radius: 500px;
         color: white;
         position: absolute;
-        left: 5px;
+        left: 18px;
     }
+
+    &__txt {
+       display: flex;
+       justify-content: flex-start;
+       padding-left: 50px;
+    }
+}
+
+/*************
+    section : cards
+**************/
+
+.container-restaurant{
+    padding: 0 20px;
+}
+
+/*************
+    section : footer
+**************/
+
+.footer {
+    padding: 0 20px;
+
 }
