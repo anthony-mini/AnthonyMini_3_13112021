@@ -67,9 +67,12 @@
 
 .opt-list {
     padding: 0;
+    display: flex;
+    flex-direction: column;
 
     &__step {
-        @include FlexColumnCenter;
+       display: flex;
+       align-items: center;
     }
 
     &__btn {
@@ -78,9 +81,10 @@
   
     &__number {
         background-color: $primary-color;
-        padding: 3px 9px;
+        padding: 2px 6.5px;
         border-radius: 500px;
         color: white;
         position: absolute;
+        left: 5px;
     }
 }

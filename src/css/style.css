@@ -306,10 +306,49 @@ a {
   border: none;
   height: 60px;
   width: 100%;
-  border-radius: 15px;
+  border-radius: 18px;
   font-weight: 450;
   font-size: 16px;
   cursor: pointer;
+}
+
+/*************
+    Restaurant
+    Cards
+**************/
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 90%;
+  height: 270px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 1px #e2e2e2;
+  margin: 0 0 50px 0;
+}
+.cards__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.cards__nouveau {
+  background-color: #99E2D0;
+  color: #009070;
+  border-radius: 3px;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  right: 30px;
+  margin-top: 10px;
 }
 
 /*************
@@ -398,11 +437,11 @@ img {
 
 .opt-list {
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .opt-list__step {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .opt-list__btn {
@@ -410,10 +449,11 @@ img {
 }
 .opt-list__number {
   background-color: #9356DC;
-  padding: 3px 9px;
+  padding: 2px 6.5px;
   border-radius: 500px;
   color: white;
   position: absolute;
+  left: 5px;
 }
 
 /*************
