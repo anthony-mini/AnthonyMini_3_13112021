@@ -387,7 +387,7 @@ img {
   font-size: 15px;
 }
 .search-bar__input {
-  background-color: #EAEAEA;
+  background: none;
   border: none;
   text-align: center;
   width: 40%;
