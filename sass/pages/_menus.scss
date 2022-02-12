@@ -1,0 +1,71 @@
+/*************
+    menus
+**************/
+
+.container-img {
+    background-color: red;
+    width: 100%;
+    height: 250px;
+}
+
+.background-img{
+    max-width: 100%;
+    width: 100%;
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+// Section menu 
+
+.container-menu {
+    background-color: $background-color;
+    padding-top: 10px;
+    margin-top: -40px;
+    border-radius: 30px 30px 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: relative;
+}
+
+.container-menu {
+    max-width: 100%;
+}
+
+.menu-title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &__txt{
+        font-weight: 50;
+        font-size: 28px;
+        font-family: Shrikhand;
+        padding-left: 20px;
+        margin: 20px 0 35px 0;
+    }
+}
+
+.sub-menu {
+    
+    margin: 0 10px 0 10px;
+    padding-bottom: 25px;
+
+    &__title {
+        position: relative;
+        padding-bottom: 7px;
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0 0 15px 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 47px;
+            height: 3px;
+            background-color: $tertiary-color;
+        }
+    }
+}
