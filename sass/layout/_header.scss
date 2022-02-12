@@ -9,6 +9,12 @@ header {
   a {
       @include FlexCenter;
   }
+
+  .left-arrow {
+    position: absolute;
+    left: 25px;
+    font-size: 18px;
+  }
 }
 
 img {   
