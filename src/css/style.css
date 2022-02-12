@@ -334,6 +334,7 @@ a {
   background-color: #F6F6F6;
   height: auto;
   width: 100%;
+  padding: 0 20px;
 }
 .container-restaurant h2 {
   padding-top: 50px;
@@ -344,6 +345,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .cards {
@@ -353,20 +355,23 @@ a {
   justify-content: flex-start;
   background-color: white;
   width: 100%;
-  height: 235px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 2px 2px 5px 1px #e2e2e2;
-  margin: 0 0 50px 0;
+  margin: 0 0 20px 0;
 }
 .cards__img {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  object-position: 0px -50px;
+  object-position: 0px -52px;
   border-radius: 15px 15px 0 0;
 }
 .cards:nth-child(2) .cards__img {
-  object-position: 0px -145px;
+  object-position: 0px -155px;
+}
+.cards:nth-child(4) .cards__img {
+  object-position: 0px -55px;
 }
 .cards__nouveau {
   background-color: #99E2D0;
@@ -387,11 +392,11 @@ a {
   display: flex;
 }
 .cards__details--txt {
-  margin: 13px 10px 40px 15px;
+  margin: 15px 10px 0px 15px;
   padding-right: 50px;
 }
 .cards__details--main {
-  margin: 0 0 3px 0;
+  margin: 0 0 5px 0;
   font-size: 18.5px;
   font-weight: 600;
 }
@@ -501,6 +506,8 @@ img {
   color: white;
   position: absolute;
   left: 18px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .opt-list__txt {
   display: flex;
@@ -509,21 +516,44 @@ img {
 }
 
 /*************
-    section : cards
-**************/
-.container-restaurant {
-  padding: 0 20px;
-}
-
-/*************
-    section : footer
-**************/
-.footer {
-  padding: 0 20px;
-}
-
-/*************
     footer
 **************/
+.footer {
+  background-color: #343434;
+  width: 100%;
+  height: auto;
+  padding: 0px 0 15px 0;
+}
+.footer__logo {
+  color: #FFFFFF;
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin: 0px 20px;
+  padding-top: 30px;
+}
+.footer ul {
+  padding: 0;
+  margin: 20px;
+}
+.footer__txt {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin: 5px 0 5px 0;
+}
+.footer__txt:hover {
+  text-decoration: underline;
+}
+.footer__txt--icon1 {
+  font-size: 15px;
+  margin-right: 10px;
+}
+.footer__txt--icon2 {
+  font-size: 10px;
+  margin-right: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -82,6 +82,8 @@
         color: white;
         position: absolute;
         left: 18px;
+        font-size: 14px;
+        font-weight: 500;
     }
 
     &__txt {
@@ -89,23 +91,4 @@
        justify-content: flex-start;
        padding-left: 50px;
     }
-}
-
-/*************
-    section : cards
-**************/
-
-.container-restaurant{
-    padding: 0 20px;
-}
-
-
-
-/*************
-    section : footer
-**************/
-
-.footer {
-    padding: 0 20px;
-
 }

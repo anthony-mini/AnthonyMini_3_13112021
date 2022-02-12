@@ -1,3 +1,48 @@
 /*************
     footer
 **************/
+
+.footer {
+    background-color: #343434;
+    width: 100%;
+    height: auto;
+    padding: 0px 0 15px 0;
+
+
+    &__logo {
+        color: #FFFFFF;
+        font-family: Shrikhand;
+        font-size: 18px;
+        font-weight: 100;
+        letter-spacing: 0.2px;
+        margin: 0px 20px; 
+        padding-top: 30px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 20px;
+    }
+
+    &__txt {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        margin: 5px 0 5px 0;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &--icon1 {
+            font-size: 15px;
+            margin-right: 10px;
+        }
+
+        &--icon2 {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+    }
+}
