@@ -423,14 +423,14 @@ a {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  object-position: 0px -52px;
+  object-position: 0px -40px;
   border-radius: 15px 15px 0 0;
 }
 .cards:nth-child(2) .cards__img {
-  object-position: 0px -155px;
+  object-position: 0px -140px;
 }
 .cards:nth-child(4) .cards__img {
-  object-position: 0px -55px;
+  object-position: 0px -45px;
 }
 .cards__nouveau {
   background-color: #99E2D0;
@@ -582,18 +582,22 @@ img {
 /*************
     menus
 **************/
-.container-img {
-  background-color: red;
+.background-menu {
   width: 100%;
-  height: 250px;
+  height: 255px;
 }
 
-.background-img {
-  max-width: 100%;
+.background-img__horizontal {
   width: 100%;
-  max-height: 400px;
   height: auto;
   object-fit: cover;
+}
+
+.background-img__vertical {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: 0px -92px;
 }
 
 .container-menu {
