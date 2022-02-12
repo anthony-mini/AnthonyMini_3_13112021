@@ -7,6 +7,7 @@
 .container-explore__btn {
     @include background-btn-explore;
     @include box-shadow;
+    @include FlexCenter;
     color: white;
     border: none;
     height: 50px;
@@ -20,6 +21,9 @@
 .opt-list__btn {
     background-color: $opt-background-color;
     @include box-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     color: black;
     border: none;
     height: 65px;
