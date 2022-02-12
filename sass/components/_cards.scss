@@ -2,6 +2,16 @@
     Restaurant
     Cards
 **************/
+
+.container-restaurant {
+    background-color: $background-color; 
+    height: auto;
+    width: 100%;
+
+    h2 {
+        padding-top: 50px;
+    }
+}
 .container-cards {
     @include FlexColumnCenter;
 }
@@ -9,30 +19,61 @@
 .cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: flex-start;
     background-color: white;
     width: 100%;
-    height: 270px;
+    height: 235px;
     border-radius: 20px;
     box-shadow: 2px 2px 5px 1px #e2e2e2;
     margin: 0 0 50px 0;
 
     &__img {
         width: 100%;
-        height: 200px;
+        height: 70%;
         object-fit: cover;
+        object-position: 0px -50px;
         border-radius: 15px 15px 0 0;
+    }
+
+    &:nth-child(2) .cards__img {
+        object-position: 0px -145px;
     }
 
     &__nouveau {
         background-color: $tertiary-color;
+        @include box-shadow;
+        @include FlexCenter;
         color: #009070;
         border-radius: 3px;
         padding: 5px 10px 5px 10px;
         position: absolute;
         right: 30px;
         margin-top: 10px;
-
+        font-size: 15px;
+        font-weight: 520;
     }
+
+    &__details {
+        display: flex;
+
+        &--txt {
+            margin: 13px 10px 40px 15px;
+            padding-right: 50px; /////////////////////////////
+        }
+
+        &--main {
+            margin: 0 0 3px 0;
+            font-size: 18.5px;
+            font-weight: 600;
+        }
+
+        &--secondary {
+            margin: 0;
+            font-size: 17px;
+            font-weight: 300;
+        }
+    }
+
+    
 }
