@@ -7,6 +7,10 @@
     max-height: 255px;
     width: 100%;
     object-fit: cover;
+
+    @media screen and (min-width:575px){
+        max-height: 350px;
+    }
 }
 
 .background-img__vertical{
@@ -15,11 +19,17 @@
     height: auto;
     object-fit: cover;
     object-position: 0px -92px;
+
+    @media screen and (min-width:575px){
+        max-height: 350px;
+        object-position: 0 -140px;
+    }
 }
 
 // Section menu 
 
 .container-menu {
+    max-width: 100%;
     background-color: $background-color;
     padding-top: 10px;
     margin-top: -40px;
@@ -27,11 +37,12 @@
     background-color: #f6f6f6;
     z-index: 1;
     position: relative;
+
+    @media screen and (min-width: 575px) {
+        border-radius: 40px;
+    }
 }
 
-.container-menu {
-    max-width: 100%;
-}
 
 .menu-title{
     display: flex;
@@ -44,6 +55,20 @@
         font-family: Shrikhand;
         padding-left: 20px;
         margin: 20px 0 35px 0;
+
+        @media  screen and (min-width: 575px) {
+            font-weight: 50;
+            font-size: 35px;
+            padding-left: 0;
+            margin: 20px 0 35px 0;
+            
+        }
+    }
+
+    @media screen and (min-width: 575px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -52,12 +77,28 @@
     margin: 0 10px 0 10px;
     padding-bottom: 25px;
 
+    @media screen and (min-width: 450px) {
+        margin: 0 20px 0 20px;
+    }
+
+    @media screen and (min-width: 575px) {
+        margin: 0 40px 0 40px;
+    }
+
+    @media screen and (min-width: 700px) {
+        margin: 0 90px 0 90px;
+    }    
+
     &__title {
         position: relative;
         padding-bottom: 7px;
         font-weight: 300;
         font-size: 17px;
         margin: 0 0 15px 10px;
+
+        @media screen and (min-width: 575px){
+            font-size: 20px;
+        } 
 
         &::after {
             content: "";

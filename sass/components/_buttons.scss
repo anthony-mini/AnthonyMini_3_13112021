@@ -1,8 +1,4 @@
-
-/*************
-    Explore and 
-    Order Button
-**************/
+// Btn Accueil
 
 .container-explore__btn {
     @include background-btn-explore;
@@ -40,48 +36,9 @@
     }
 }
 
-.tab {
-    background-color: $opt-background-color;
-    @include box-shadow;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 65px;
-    width: 100%;
-    border-radius: 18px;
-    cursor: pointer;
-    padding: 10px 10px 10px 10px;
-    margin: 15px 0;
 
-    &__details {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
+// Btn Menus
 
-
-        &--main{
-            margin: 0 0 5px 0;
-            font-size: 17.5px;
-            font-weight: 500;
-        }
-
-        &--secondary {
-            margin: 0 5px 0 0;
-            font-size: 15px;
-            font-weight: 300;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;  //////// 
-        }
-
-        &--price {
-            margin-right: 10px;
-            font-weight: 550;
-            font-size: 15px;
-            padding-top: 25px;
-        }
-    }
-}
 
 .container-btn-menu {
     @include FlexCenter;
@@ -100,4 +57,12 @@
     font-weight: 450;
     font-size: 16px;
     cursor: pointer;
+
+    @media screen and (min-width: 575px) {
+        font-size: 20px;
+        font-weight: 500;
+        height: 55px;
+        width: 200px;
+    }
+
 }
