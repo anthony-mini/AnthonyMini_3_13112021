@@ -17,11 +17,21 @@
         letter-spacing: 0.2px;
         margin: 0px 20px; 
         padding-top: 30px;
+
+        @media screen and (min-width:575px){
+            font-size: 25px;
+            // text-align: center;
+            margin-bottom: 10px;
+        }
     }
 
     ul {
         padding: 0;
         margin: 20px;
+
+        @media screen and (min-width: 575px) {
+            margin: 20px;
+        }
     }
 
     &__txt {
@@ -29,7 +39,12 @@
         font-size: 16px;
         font-weight: 400;
         display: block;
-        margin: 7px 0 7px 0;
+        margin: 3px 0 3px 0;
+
+        @media screen and (min-width: 575px) {
+            font-size: 19px;
+            font-weight: 500;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -38,11 +53,13 @@
         &--icon1 {
             font-size: 15px;
             margin-right: 10px;
+            padding-right: 3px;
         }
 
         &--icon2 {
-            font-size: 10px;
-            margin-right: 10px;
+            font-size: 13px;
+            margin-right: 5px;
+            padding-right: 3px;
         }
     }
 }
