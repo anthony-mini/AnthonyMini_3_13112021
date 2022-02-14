@@ -1,3 +1,7 @@
+// .container-tab{
+//     width: 100%;
+// }
+
 .tab {
     background-color: $opt-background-color;
     @include box-shadow;
@@ -5,11 +9,15 @@
     align-items: center;
     justify-content: flex-start;
     height: 65px;
-    width: 100%;
+    width: 100%;;
     border-radius: 18px;
     cursor: pointer;
     padding: 10px 10px 10px 10px;
     margin: 15px 0;
+
+    @media screen and (min-width: 938px){
+        min-width: 390px;
+    }
 
     &__details {
         display: flex;
