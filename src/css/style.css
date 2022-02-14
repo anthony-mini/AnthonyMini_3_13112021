@@ -264,6 +264,7 @@ body {
 
 body {
   margin: auto;
+  max-width: 1440px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   list-style-type: none;
 }
@@ -356,7 +357,7 @@ main {
   padding: 10px 10px 10px 10px;
   margin: 15px 0;
 }
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .tab {
     min-width: 390px;
   }
@@ -423,6 +424,11 @@ main {
     padding: 0 50px;
   }
 }
+@media screen and (min-width: 1255px) {
+  .container-restaurant {
+    padding: 0 200px;
+  }
+}
 .container-restaurant h2 {
   padding-top: 50px;
   font-size: 25px;
@@ -432,6 +438,11 @@ main {
     font-size: 30px;
   }
 }
+@media screen and (min-width: 1255px) {
+  .container-restaurant h2 {
+    padding-left: 100px;
+  }
+}
 
 .container-cards {
   display: flex;
@@ -439,6 +450,12 @@ main {
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
+}
+@media screen and (min-width: 1255px) {
+  .container-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .cards {
@@ -453,6 +470,38 @@ main {
   box-shadow: 2px 2px 5px 1px #e2e2e2;
   margin: 0 0 20px 0;
 }
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(1) {
+    width: 80%;
+    height: 300px;
+    order: 1;
+    margin: 0 0 10px 0;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(2) {
+    width: 80%;
+    height: 300px;
+    order: 4;
+    margin: 10px 0 0 0;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(3) {
+    order: 2;
+    height: 300px;
+    width: 39%;
+    margin: 10px 10px 10px 10px;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(4) {
+    order: 3;
+    height: 300px;
+    width: 39%;
+    margin: 10px 10px 10px 10px;
+  }
+}
 @media screen and (min-width: 575px) {
   .cards {
     height: 280px;
@@ -461,6 +510,11 @@ main {
 @media screen and (min-width: 700px) {
   .cards {
     height: 400px;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards {
+    height: 280px;
   }
 }
 .cards__img {
@@ -492,6 +546,12 @@ main {
     object-position: 0px -180px;
   }
 }
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(1) .cards__img {
+    height: 78%;
+    object-position: 0px -130px;
+  }
+}
 .cards:nth-child(2) .cards__img {
   object-position: 0px -140px;
 }
@@ -513,6 +573,17 @@ main {
 @media screen and (min-width: 900px) {
   .cards:nth-child(2) .cards__img {
     object-position: 0px -450px;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(2) .cards__img {
+    object-position: 0px -400px;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(3) .cards__img {
+    height: 78%;
+    object-position: 0px -30px;
   }
 }
 .cards:nth-child(4) .cards__img {
@@ -538,6 +609,11 @@ main {
     object-position: 0px -250px;
   }
 }
+@media screen and (min-width: 1255px) {
+  .cards:nth-child(4) .cards__img {
+    object-position: 0px -40px;
+  }
+}
 .cards__nouveau {
   background-color: #99E2D0;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
@@ -548,8 +624,9 @@ main {
   border-radius: 3px;
   padding: 5px 10px 5px 10px;
   position: absolute;
-  right: 30px;
   margin-top: 10px;
+  top: 1;
+  right: 30px;
   font-size: 15px;
   font-weight: 520;
 }
@@ -562,6 +639,11 @@ main {
 @media screen and (min-width: 700px) {
   .cards__nouveau {
     right: 60px;
+  }
+}
+@media screen and (min-width: 1255px) {
+  .cards__nouveau {
+    right: 340px;
   }
 }
 .cards__details {
@@ -739,9 +821,9 @@ img {
     font-size: 30px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .container-opt h2 {
-    text-align: center;
+    padding-left: 200px;
   }
 }
 
@@ -750,10 +832,11 @@ img {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .opt-list {
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0 40px 0 40px;
   }
 }
@@ -776,9 +859,9 @@ img {
   padding: 0 20px 0 20px;
   margin: 10px 0;
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .opt-list__btn {
-    min-width: 500;
+    min-width: 400px;
   }
 }
 .opt-list__btn--icon {
@@ -803,7 +886,7 @@ img {
     left: 150px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .opt-list__btn--icon {
     position: relative;
     left: 20px;
@@ -836,7 +919,7 @@ img {
     left: 95px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .opt-list__number {
     position: relative;
     left: 15px;
@@ -858,7 +941,7 @@ img {
     padding-left: 70px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .opt-list__txt {
     padding-left: 40px;
     padding-right: 20px;
@@ -885,13 +968,13 @@ img {
     object-position: 0 -100px;
   }
 }
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .background-img__horizontal {
     max-height: 450px;
     object-position: 0 -160px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .background-img__horizontal {
     max-height: 520px;
     object-position: 0 -350px;
@@ -917,13 +1000,13 @@ img {
     object-position: 0 -320px;
   }
 }
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .background-img__vertical {
     max-height: 450px;
     object-position: 0 -470px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .background-img__vertical {
     max-height: 520px;
     object-position: 0 -730px;
@@ -952,20 +1035,20 @@ img {
     margin-top: -120px;
   }
 }
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .container-menu {
     max-width: 95%;
     margin-top: -120px;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1255px) {
   .container-menu {
     max-width: 92%;
     margin-top: -125px;
   }
 }
 
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .container-sub-menu {
     display: flex;
     flex-wrap: wrap;
@@ -1020,7 +1103,7 @@ img {
     margin: 0 50px 0 50px;
   }
 }
-@media screen and (min-width: 938px) {
+@media screen and (min-width: 900px) {
   .sub-menu {
     margin: 0 20px 0 20px;
   }

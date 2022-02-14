@@ -17,6 +17,10 @@
         padding: 0 50px;
     }
 
+    @media screen and (min-width: 1255px) {
+        padding: 0 200px;
+    }
+
     h2 {
         padding-top: 50px;
         font-size: 25px;
@@ -24,12 +28,21 @@
         @media screen and (min-width: 575px){
             font-size: 30px;
         }
+
+        @media screen and (min-width: 1255px){
+            padding-left: 100px;
+        }
     }
 }
 
 .container-cards {
     @include FlexColumnCenter;
     padding-bottom: 40px;
+
+    @media screen and (min-width: 1255px){
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .cards {
@@ -44,12 +57,52 @@
     box-shadow: 2px 2px 5px 1px #e2e2e2;
     margin: 0 0 20px 0;
 
+    &:nth-child(1) {
+        @media screen and (min-width: 1255px) {
+            width: 80%;
+            height: 300px;
+            order: 1;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &:nth-child(2) {
+        @media screen and (min-width: 1255px) {
+            width: 80%;
+            height: 300px;
+            order: 4;
+            margin: 10px 0 0 0;
+        }
+    }
+
+    &:nth-child(3) {
+        @media screen and (min-width: 1255px) {
+            order: 2;
+            height: 300px;
+            width: 39%;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
+    &:nth-child(4) {
+        @media screen and (min-width: 1255px) {
+            order: 3;
+            height: 300px;
+            width: 39%;
+            margin: 10px 10px 10px 10px;
+        }
+    }
+
     @media screen and (min-width: 575px) {
         height: 280px;
     }
 
     @media screen and (min-width: 700px) {
         height: 400px;
+    }
+
+    @media screen and (min-width: 1255px) {
+        height: 280px;
     }
 
     &__img {
@@ -78,6 +131,13 @@
         }
     }
 
+    &:nth-child(1) .cards__img {
+        @media screen and (min-width: 1255px) {
+            height: 78%;
+            object-position: 0px -130px; 
+        }
+    }
+
     &:nth-child(2) .cards__img {
         object-position: 0px -140px;
 
@@ -95,6 +155,17 @@
 
         @media screen and (min-width: 900px) {
             object-position: 0px -450px; 
+        }
+
+        @media screen and (min-width: 1255px) {
+            object-position: 0px -400px; 
+        }
+    }
+
+    &:nth-child(3) .cards__img {
+        @media screen and (min-width: 1255px) {
+            height: 78%;
+            object-position: 0px -30px; 
         }
     }
 
@@ -116,6 +187,10 @@
         @media screen and (min-width: 900px) {
             object-position: 0px -250px; 
         }
+
+        @media screen and (min-width: 1255px) {
+            object-position: 0px -40px; 
+        }
     }
 
     &__nouveau {
@@ -126,8 +201,10 @@
         border-radius: 3px;
         padding: 5px 10px 5px 10px;
         position: absolute;
-        right: 30px;
         margin-top: 10px;
+        top: 1; //////////////////
+        right: 30px;
+
         font-size: 15px;
         font-weight: 520;
 
@@ -138,6 +215,10 @@
 
         @media screen and (min-width: 700px) {
             right: 60px;
+        }
+
+        @media screen and (min-width: 1255px) {
+            right: 340px; /////////////
         }
     }
 

@@ -17,12 +17,12 @@
         object-position: 0 -100px;
     }
 
-    @media screen and (min-width: 938px){
+    @media screen and (min-width: 900px){
         max-height: 450px;
         object-position: 0 -160px;
     }
 
-    @media screen and (min-width: 1100px){
+    @media screen and (min-width: 1255px){
         max-height: 520px;
         object-position: 0 -350px;
     }
@@ -45,12 +45,12 @@
         object-position: 0 -320px;
     }
 
-    @media screen and (min-width: 938px){
+    @media screen and (min-width: 900px){
         max-height: 450px;
         object-position: 0 -470px;
     }
 
-    @media screen and (min-width: 1100px){
+    @media screen and (min-width: 1255px){
         max-height: 520px;
         object-position: 0 -730px;
     }
@@ -80,12 +80,12 @@
         margin-top: -120px;
     }
 
-    @media screen and (min-width: 938px) {
+    @media screen and (min-width: 900px) {
         max-width: 95%;
         margin-top: -120px;
     }
 
-    @media screen and (min-width: 1100px){
+    @media screen and (min-width: 1255px){
         max-width: 92%;
         margin-top: -125px;
     }
@@ -93,7 +93,7 @@
 
 .container-sub-menu {
 
-    @media screen and (min-width: 938px) {
+    @media screen and (min-width: 900px) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -145,7 +145,7 @@
         margin: 0 50px 0 50px;
     }  
 
-    @media screen and (min-width: 938px) {
+    @media screen and (min-width: 900px) {
         margin: 0 20px 0 20px;
     }  
 

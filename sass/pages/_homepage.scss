@@ -97,8 +97,8 @@
             font-size: 30px;
         }
 
-        @media screen and (min-width: 1100px){
-            text-align: center;
+        @media screen and (min-width: 1255px){
+            padding-left: 200px;
         }
     }
 }
@@ -108,9 +108,10 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width: 1100px) {
+    @media screen and (min-width: 1255px) {
         flex-direction: row;
         justify-content: center;
+        flex-wrap: wrap;
         padding: 0 40px 0 40px;
     }
 
@@ -134,8 +135,8 @@
         padding: 0 20px 0 20px;
         margin: 10px 0;
 
-        @media screen and (min-width: 1100px) {
-            min-width: 500;
+        @media screen and (min-width: 1255px) {
+            min-width: 400px;
         }
     
         &--icon {
@@ -157,7 +158,7 @@
                 left: 150px;
             }
 
-            @media screen and (min-width: 1100px) {
+            @media screen and (min-width: 1255px) {
                 position: relative; 
                 left: 20px;
             }
@@ -188,7 +189,7 @@
             left: 95px;   
         }
 
-        @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 1255px) {
             position: relative; 
             left: 15px;
         }
@@ -208,7 +209,7 @@
         padding-left: 70px;
     }
 
-    @media screen and (min-width: 1100px){
+    @media screen and (min-width: 1255px){
         padding-left: 40px;
         padding-right: 20px;
     }
