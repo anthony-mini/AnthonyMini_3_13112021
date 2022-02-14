@@ -9,8 +9,21 @@
     width: 100%;
     padding: 0 20px;
 
+    @media screen and (min-width: 575px) {
+        padding: 0 40px;
+    }
+
+    @media screen and (min-width: 700px) {
+        padding: 0 50px;
+    }
+
     h2 {
         padding-top: 50px;
+        font-size: 25px;
+
+        @media screen and (min-width: 575px){
+            font-size: 30px;
+        }
     }
 }
 
@@ -31,20 +44,78 @@
     box-shadow: 2px 2px 5px 1px #e2e2e2;
     margin: 0 0 20px 0;
 
+    @media screen and (min-width: 575px) {
+        height: 280px;
+    }
+
+    @media screen and (min-width: 700px) {
+        height: 400px;
+    }
+
     &__img {
         width: 100%;
         height: 70%;
         object-fit: cover;
         object-position: 0px -40px;
         border-radius: 15px 15px 0 0;
+
+        @media screen and (min-width: 450px) {
+            object-position: 0px -100px; 
+        }
+
+        @media screen and (min-width: 575px) {
+            object-position: 0px -130px; 
+        }
+
+        @media screen and (min-width: 700px) {
+            height: 78%;
+            object-position: 0px -80px; 
+        }
+
+        @media screen and (min-width: 900px) {
+            height: 78%;
+            object-position: 0px -180px; 
+        }
     }
 
     &:nth-child(2) .cards__img {
         object-position: 0px -140px;
+
+        @media screen and (min-width: 450px) {
+            object-position: 0px -150px; 
+        }
+
+        @media screen and (min-width: 575px) {
+            object-position: 0px -180px; 
+        }
+
+        @media screen and (min-width: 700px) {
+            object-position: 0px -210px; 
+        }
+
+        @media screen and (min-width: 900px) {
+            object-position: 0px -450px; 
+        }
     }
 
     &:nth-child(4) .cards__img {
         object-position: 0px -45px;
+
+        @media screen and (min-width: 450px) {
+            object-position: 0px -100px; 
+        }
+
+        @media screen and (min-width: 575px) {
+            object-position: 0px -150px; 
+        }
+
+        @media screen and (min-width: 700px) {
+            object-position: 0px -150px; 
+        }
+
+        @media screen and (min-width: 900px) {
+            object-position: 0px -250px; 
+        }
     }
 
     &__nouveau {
@@ -59,6 +130,15 @@
         margin-top: 10px;
         font-size: 15px;
         font-weight: 520;
+
+        @media screen and (min-width: 575px) {
+            right: 50px;
+            font-size: 17px;
+        }
+
+        @media screen and (min-width: 700px) {
+            right: 60px;
+        }
     }
 
     &__details {
@@ -73,12 +153,20 @@
             margin: 0 0 5px 0;
             font-size: 18.5px;
             font-weight: 600;
+
+            @media screen and (min-width: 575px) {
+                font-size: 23px;
+            }
         }
 
         &--secondary {
             margin: 0;
             font-size: 17px;
             font-weight: 300;
+
+            @media screen and (min-width: 575px) {
+                font-size: 20px;
+            }
         }
     }
 }

@@ -44,6 +44,10 @@
         text-align: center;
         font-size: 25px;
         font-weight: 600;
+
+        @media screen and (min-width: 575px){
+            font-size: 30px;
+        }
        
     }
 
@@ -52,6 +56,10 @@
         text-align: center;
         font-size: 18px;
         font-weight: 300;
+
+        @media screen and (min-width: 575px) {
+            font-size: 21px;
+        }
     }   
 }
 
@@ -64,6 +72,35 @@
     height : auto;
     width: 100%;
     padding: 20px 20px 30px 20px;
+
+    @media screen and (min-width: 575px){
+        padding: 20px 40px 30px 40px;
+    }
+
+    @media screen and (min-width: 700px){
+        padding: 20px 50px 30px 50px;
+    }
+
+    @media screen and (min-width: 900px){
+        padding: 20px 100px 30px 100px;
+    }
+
+    @media screen and (min-width: 1000px){
+      
+    }
+
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+
+        @media screen and (min-width: 575px){
+            font-size: 30px;
+        }
+
+        @media screen and (min-width: 1100px){
+            text-align: center;
+        }
+    }
 }
 
 .opt-list {
@@ -71,9 +108,60 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (min-width: 1100px) {
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 40px 0 40px;
+    }
+
     &__step {
        display: flex;
        align-items: center;
+    }
+
+    &__btn {
+        background-color: $opt-background-color;
+        @include box-shadow;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 65px;
+        width: 100%;
+        border-radius: 18px;
+        font-weight: 450;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 0 20px 0 20px;
+        margin: 10px 0;
+
+        @media screen and (min-width: 1100px) {
+            min-width: 500;
+        }
+    
+        &--icon {
+            color: grey;
+            position: absolute;
+            left: 60px;
+            font-size: 18px;
+
+            @media screen and (min-width: 575px) {
+                font-size: 22px;
+                left: 80px;
+            }
+
+            @media screen and (min-width: 700px) {
+                left: 90px;
+            }
+
+            @media screen and (min-width: 900px) {
+                left: 150px;
+            }
+
+            @media screen and (min-width: 1100px) {
+                position: relative; 
+                left: 20px;
+            }
+        }
     }
   
     &__number {
@@ -85,11 +173,45 @@
         left: 18px;
         font-size: 14px;
         font-weight: 500;
+
+        @media screen and (min-width: 575px) {
+            font-size: 20px;
+            left: 35px;
+            padding: 3px 9px;   
+        }
+
+        @media screen and (min-width: 700px) {
+            left: 45px;   
+        }
+
+        @media screen and (min-width: 900px) {
+            left: 95px;   
+        }
+
+        @media screen and (min-width: 1100px) {
+            position: relative; 
+            left: 15px;
+        }
     }
 
     &__txt {
        display: flex;
        justify-content: flex-start;
        padding-left: 50px;
+       font-size: 16px;
+
+       @media screen and (min-width: 575px){
+           font-size: 20px;
+       }
+
+       @media screen and (min-width: 900px){
+        padding-left: 70px;
+    }
+
+    @media screen and (min-width: 1100px){
+        padding-left: 40px;
+        padding-right: 20px;
+    }
+       
     }
 }
