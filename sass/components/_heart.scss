@@ -1,7 +1,36 @@
 .cards__icon--heart {
-    display: none;
-}
 
-.menu-title__heart {
-    display: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 27px;
+    margin: 19px 25px 0 0;
+
+    @media screen and (min-width: 575px) {
+        margin: 25px 25px 0 0;
+    } 
+
+
+    i.far.fa-heart {
+        display: block;
+    }
+
+    i.fas.fa-heart {
+        display: none;
+    }
+    
+    &:hover i.far.fa-heart {
+        
+        display: none;
+        border: 0 solid transparent;
+        }
+
+    &:hover i.fas.fa-heart {
+        display: block;
+        @include background-like;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: 1s ease-in-out;
+    }
+
 }
