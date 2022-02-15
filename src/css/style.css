@@ -525,7 +525,7 @@ main {
   border-radius: 15px 15px 0 0;
 }
 .cards:nth-child(1) .cards__img {
-  object-position: 0px -60px;
+  object-position: 0px -40px;
 }
 @media screen and (min-width: 450px) {
   .cards:nth-child(1) .cards__img {
@@ -779,6 +779,7 @@ img {
 .search-bar__input {
   background: #EAEAEA;
   border: none;
+  appearance: textarea;
   text-align: center;
   width: 130px;
   margin-top: 5px;
