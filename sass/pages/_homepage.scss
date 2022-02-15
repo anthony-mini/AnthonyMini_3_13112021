@@ -5,25 +5,50 @@
 .search-bar {
     background-color: $search-bar-color;
     @include FlexCenter;
-    height: 45px;
+    padding-top: 65px;
+    padding-bottom: 15px;
     width: 100%;
     box-shadow: 0px 3px 5px 0px #CCCCCC inset;
 
+    @media screen and (min-width: 575px) {
+        padding-top: 75px;
+    }
+
+    @media screen and (min-width: 1100px) {
+        padding-top: 12px;
+    }
+
     &__icons {
-        font-size: 15px;
+        position: relative;
+
+        i {
+            font-size: 15px;
+            position: absolute;
+            right: 4px;
+            top: -8px;
+        }
     }
 
     &__input {
-        background: none;
+        background: $search-bar-color;
         border : none;
         text-align: center;
-        width: 40%;
+        width: 130px;
+        margin-top: 5px;
+
+        @media screen and (min-width: 575px) {
+            width: 150px;
+            }
         
         &::placeholder {
             color: $placeholder-color;
             font-weight: 400;
             font-size: 16px;
-            }
+
+                @media screen and (min-width: 575px) {
+                font-size: 19px;
+                }
+            }     
     }   
 }
 
