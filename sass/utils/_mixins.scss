@@ -41,6 +41,10 @@
     background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
 }
 
+@mixin background-like {
+    background: linear-gradient(180deg, $primary-color 0%, $secondary-color 70%);
+}
+
 @mixin margin-inline {
     margin-inline-start: 30px;
     margin-inline-end: 30px;
