@@ -30,9 +30,11 @@
     }
 
     &__input {
-        background: $search-bar-color;
-        border : none;
-        appearance: none;
+        background-color: $search-bar-color;
+        border-radius : 6px; //
+        border: none; // 
+        appearance: none; //
+        -webkit-appearance: none;
         text-align: center;
         width: 130px;
         margin-top: 5px;

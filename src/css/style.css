@@ -777,9 +777,11 @@ img {
   top: -8px;
 }
 .search-bar__input {
-  background: #EAEAEA;
+  background-color: #EAEAEA;
+  border-radius: 6px;
   border: none;
   appearance: none;
+  -webkit-appearance: none;
   text-align: center;
   width: 130px;
   margin-top: 5px;
