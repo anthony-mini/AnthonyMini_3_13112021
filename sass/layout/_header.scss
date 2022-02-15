@@ -5,11 +5,21 @@
 header {
   @include FlexVerticalCenter;          
   height: 55px;
+  max-width: 1440px;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.279);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
 
   @media screen and (min-width: 575px){
     height: 65px;
   }
+
+  @media screen and (min-width: 1100px){
+    position: static;
+  }
+
   a {
       @include FlexCenter;
   }
@@ -19,10 +29,10 @@ header {
     left: 25px;
     font-size: 18px;
 
-    @media screen and (min-width:575px){
-      font-size: 23px;
-      left: 30px;
-    }
+      @media screen and (min-width:575px){
+        font-size: 23px;
+        left: 30px;
+      }
   }
 }
 
