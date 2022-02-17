@@ -775,6 +775,40 @@ main {
   transition: 1s ease-in-out;
 }
 
+.menu-title__heart {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 27px;
+  z-index: 1;
+  position: absolute;
+  top: 19px;
+  right: 29px;
+}
+@media screen and (min-width: 575px) {
+  .menu-title__heart {
+    font-size: 30px;
+    top: 22px;
+  }
+}
+.menu-title__heart i.far.fa-heart {
+  display: block;
+}
+.menu-title__heart i.fas.fa-heart {
+  display: none;
+}
+.menu-title__heart:hover i.far.fa-heart {
+  display: none;
+  border: 0 solid transparent;
+}
+.menu-title__heart:hover i.fas.fa-heart {
+  display: block;
+  background: linear-gradient(180deg, #9356DC 0%, #FF79D1 70%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: 1s ease-in-out;
+}
+
 /*************
     header
 **************/
@@ -1134,6 +1168,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 .menu-title__txt {
   font-weight: 50;
