@@ -4,11 +4,14 @@
     justify-content: flex-end;
     font-size: 27px;
     margin: 19px 25px 0 0;
+    z-index: 1;
+   display: block;
+   
+
 
     @media screen and (min-width: 575px) {
         margin: 25px 25px 0 0;
     } 
-
 
     i.far.fa-heart {
         display: block;
@@ -19,7 +22,6 @@
     }
     
     &:hover i.far.fa-heart {
-        
         display: none;
         border: 0 solid transparent;
         }

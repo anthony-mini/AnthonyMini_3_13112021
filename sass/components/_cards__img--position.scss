@@ -1,0 +1,110 @@
+.cards {
+    &:nth-child(1) .cards__img {
+
+            object-position: 0px -40px;
+    
+            @media screen and (min-width: 450px) {
+                object-position: 0px -100px; 
+            }
+    
+            @media screen and (min-width: 575px) {
+                object-position: 0px -130px; 
+            }
+    
+            @media screen and (min-width: 700px) {
+                height: 70%;
+                object-position: 0px -80px; 
+            }
+    
+            @media screen and (min-width: 900px) {
+                object-position: 0px -180px; 
+            }
+    
+            @media screen and (min-width: 1255px) {
+                object-position: 0px -280px;
+                height: 78%;
+
+            }
+        }
+    
+        &:nth-child(2) .cards__img {
+            
+            object-position: 0px -150px;
+    
+            @media screen and (min-width: 450px) {
+                object-position: 0px -150px; 
+            }
+    
+            @media screen and (min-width: 575px) {
+                object-position: 0px -180px; 
+            }
+    
+            @media screen and (min-width: 700px) {
+                object-position: 0px -210px; 
+                height: 70%;
+            }
+    
+            @media screen and (min-width: 900px) {
+                object-position: 0px -450px; 
+            }
+    
+            @media screen and (min-width: 1255px) {
+                object-position: 0px -513px;
+                height: 78%;
+            }
+        }
+    
+        &:nth-child(3) .cards__img {
+            
+            object-position: 0px -50px;
+    
+            @media screen and (min-width: 450px) {
+                object-position: 0px -100px; 
+            }
+    
+            @media screen and (min-width: 575px) {
+                object-position: 0px -130px; 
+            }
+    
+            @media screen and (min-width: 700px) {
+                height: 70%;
+                object-position: 0px -80px; 
+            }
+    
+            @media screen and (min-width: 900px) {
+                object-position: 0px -180px; 
+            }
+    
+            @media screen and (min-width: 1255px) {
+                object-position: 0px -21px;
+                height: 78%;
+            }
+        }
+    
+        &:nth-child(4) .cards__img {
+            
+            object-position: 0px -50px;
+    
+            @media screen and (min-width: 450px) {
+                object-position: 0px -100px; 
+            }
+    
+            @media screen and (min-width: 575px) {
+                object-position: 0px -150px; 
+            }
+    
+            @media screen and (min-width: 700px) {
+                object-position: 0px -133px;
+                height: 70%;
+            }
+    
+            @media screen and (min-width: 900px) {
+                object-position: 0px -250px; 
+            }
+    
+            @media screen and (min-width: 1255px) {
+                object-position: 0px -64px;
+                height: 78%;
+            }
+        }        
+}

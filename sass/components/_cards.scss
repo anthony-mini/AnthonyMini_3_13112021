@@ -1,7 +1,4 @@
-/*************
-    Restaurant
-    Cards
-**************/
+// Cards restaurants
 
 .container-restaurant {
     background-color: $background-color; 
@@ -18,7 +15,7 @@
     }
 
     @media screen and (min-width: 1255px) {
-        padding: 0 200px;
+        padding: 0 0 30px 0;
     }
 
     h2 {
@@ -30,7 +27,8 @@
         }
 
         @media screen and (min-width: 1255px){
-            padding-left: 100px;
+            padding-left: 155px;
+            font-size: 28px;
         }
     }
 }
@@ -56,164 +54,55 @@
     margin: 0 0 20px 0;
     position: relative;
 
-    &:nth-child(1) {
-        @media screen and (min-width: 1255px) {
-            width: 80%;
-            height: 300px;
-            order: 1;
-            margin: 0 0 10px 0;
+        @media screen and (min-width: 575px) {
+            height: 280px;
         }
-    }
 
-    &:nth-child(2) {
-        @media screen and (min-width: 1255px) {
-            width: 80%;
+        @media screen and (min-width: 700px) {
             height: 300px;
-            order: 4;
-            margin: 10px 0 0 0;
         }
-    }
 
-    &:nth-child(3) {
-        @media screen and (min-width: 1255px) {
-            order: 2;
-            height: 300px;
-            width: 39%;
-            margin: 10px 10px 10px 10px;
-        }
-    }
+            &:nth-child(1) {
+                @media screen and (min-width: 1255px) {
+                    width: 80%;
+                    height: 400px;
+                    order: 1;
+                    margin: 0 0 10px 0;
+                }
+            }
 
-    &:nth-child(4) {
-        @media screen and (min-width: 1255px) {
-            order: 3;
-            height: 300px;
-            width: 39%;
-            margin: 10px 10px 10px 10px;
-        }
-    }
+            &:nth-child(2) {
+                @media screen and (min-width: 1255px) {
+                    width: 80%;
+                    height: 400px;
+                    order: 4;
+                    margin: 10px 0 0 0;
+                }
+            }
 
-    @media screen and (min-width: 575px) {
-        height: 280px;
-    }
+            &:nth-child(3) {
+                @media screen and (min-width: 1255px) {
+                    order: 2;
+                    height: 400px;
+                    width: 39%;
+                    margin: 10px 12.5px 10px 0px;
+                }
+            }
 
-    @media screen and (min-width: 700px) {
-        height: 400px;
-    }
-
-    @media screen and (min-width: 1255px) {
-        height: 280px;
-    }
+            &:nth-child(4) {
+                @media screen and (min-width: 1255px) {
+                    order: 3;
+                    height: 400px;
+                    width: 39%;
+                    margin: 10px 0px 10px 12.5px;
+                }
+            }
 
     &__img {
         width: 100%;
         height: 70%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
-    }
-
-    &:nth-child(1) .cards__img {
-
-        object-position: 0px -40px;
-
-        @media screen and (min-width: 450px) {
-            object-position: 0px -100px; 
-        }
-
-        @media screen and (min-width: 575px) {
-            object-position: 0px -130px; 
-        }
-
-        @media screen and (min-width: 700px) {
-            height: 78%;
-            object-position: 0px -80px; 
-        }
-
-        @media screen and (min-width: 900px) {
-            object-position: 0px -180px; 
-        }
-
-        @media screen and (min-width: 1255px) {
-            object-position: 0px -130px;
-            height: 70%;
-        }
-    }
-
-    &:nth-child(2) .cards__img {
-        object-position: 0px -150px;
-
-        @media screen and (min-width: 450px) {
-            object-position: 0px -150px; 
-        }
-
-        @media screen and (min-width: 575px) {
-            object-position: 0px -180px; 
-        }
-
-        @media screen and (min-width: 700px) {
-            object-position: 0px -210px; 
-            height: 78%;;
-        }
-
-        @media screen and (min-width: 900px) {
-            object-position: 0px -450px; 
-        }
-
-        @media screen and (min-width: 1255px) {
-            object-position: 0px -400px; 
-            height: 70%;
-        }
-    }
-
-    &:nth-child(3) .cards__img {
-        object-position: 0px -50px;
-
-        @media screen and (min-width: 450px) {
-            object-position: 0px -100px; 
-        }
-
-        @media screen and (min-width: 575px) {
-            object-position: 0px -130px; 
-        }
-
-        @media screen and (min-width: 700px) {
-            height: 78%;
-            object-position: 0px -80px; 
-        }
-
-        @media screen and (min-width: 900px) {
-            object-position: 0px -180px; 
-        }
-
-        @media screen and (min-width: 1255px) {
-            object-position: 0px -30px; 
-            height: 70%;
-        }
-    }
-
-    &:nth-child(4) .cards__img {
-        object-position: 0px -50px;
-
-        @media screen and (min-width: 450px) {
-            object-position: 0px -100px; 
-        }
-
-        @media screen and (min-width: 575px) {
-            object-position: 0px -150px; 
-        }
-
-        @media screen and (min-width: 700px) {
-            object-position: 0px -133px;
-            height: 78%;
-        }
-
-        @media screen and (min-width: 900px) {
-            object-position: 0px -250px; 
-        }
-
-        @media screen and (min-width: 1255px) {
-            object-position: 0px -40px; 
-            height: 70%;
-        }
     }
 
     &__nouveau {
@@ -247,6 +136,10 @@
             @media screen and (min-width: 575px) {
                 font-size: 23px;
             }
+
+            @media screen and (min-width: 1255px) {
+                font-size: 22px;
+            }
         }
 
         &--secondary {
@@ -256,6 +149,10 @@
 
             @media screen and (min-width: 575px) {
                 font-size: 20px;
+            }
+
+            @media screen and (min-width: 1255px) {
+                font-size: 19px;
             }
         }
     }

@@ -7,9 +7,11 @@
 @import "./utils/mixins";
 @import "./utils/extensions";
 
+@import "./components/search_bar";
 @import "./components/buttons";
 @import "./components/tabs";
 @import "./components/cards";
+@import "./components/cards__img--position";
 @import "./components/heart";
 
 @import "./layout/header";

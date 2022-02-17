@@ -1,63 +1,4 @@
-/*************
-    section : search
-**************/
-
-.search-bar {
-    background-color: $search-bar-color;
-    @include FlexCenter;
-    padding-top: 65px;
-    padding-bottom: 15px;
-    width: 100%;
-    box-shadow: 0px 3px 5px 0px #CCCCCC inset;
-
-    @media screen and (min-width: 575px) {
-        padding-top: 75px;
-    }
-
-    @media screen and (min-width: 1100px) {
-        padding-top: 12px;
-    }
-
-    &__icons {
-        position: relative;
-
-        i {
-            font-size: 15px;
-            position: absolute;
-            right: 4px;
-            top: -8px;
-        }
-    }
-
-    &__input {
-        background-color: $search-bar-color;
-        border-radius : 6px; // Suppression de l'apparence des input type="search" sur ios
-        border: none; // Suppression de l'apparence des input type="search" sur ios
-        appearance: none; // Suppression de l'apparence des input type="search" sur ios
-        -webkit-appearance: none; // Suppression de l'apparence des input type="search" sur ios
-        text-align: center;
-        width: 130px;
-        margin-top: 5px;
-
-        @media screen and (min-width: 575px) {
-            width: 150px;
-            }
-        
-        &::placeholder {
-            color: $placeholder-color;
-            font-weight: 400;
-            font-size: 16px;
-
-                @media screen and (min-width: 575px) {
-                font-size: 19px;
-                }
-            }     
-    }   
-}
-
-/*************
-    section : explore
-**************/
+// Section explore 
 
 .container-explore {
     @include FlexColumnCenter;
@@ -76,6 +17,10 @@
         @media screen and (min-width: 575px){
             font-size: 30px;
         }
+
+        @media screen and (min-width: 1255px){
+            font-size: 28px;
+        }
        
     }
 
@@ -91,9 +36,7 @@
     }   
 }
 
-/*************
-    section : function
-**************/
+// Section function
 
 .container-opt {
     @include FlexColumn;
@@ -113,10 +56,6 @@
         padding: 20px 100px 30px 100px;
     }
 
-    @media screen and (min-width: 1000px){
-      
-    }
-
     h2 {
         font-size: 25px;
         font-weight: 600;
@@ -126,7 +65,8 @@
         }
 
         @media screen and (min-width: 1255px){
-            padding-left: 200px;
+            padding-left: 55px;
+            font-size: 28px;
         }
     }
 }
@@ -140,7 +80,7 @@
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0 40px 0 40px;
+        padding: 0 40px 40px 40px;
     }
 
     &__step {
@@ -164,7 +104,7 @@
         margin: 10px 0;
 
         @media screen and (min-width: 1255px) {
-            min-width: 400px;
+            min-width: 350px;
         }
     
         &--icon {
@@ -188,7 +128,7 @@
 
             @media screen and (min-width: 1255px) {
                 position: relative; 
-                left: 20px;
+                left: 25px;
             }
         }
     }
@@ -234,13 +174,14 @@
        }
 
        @media screen and (min-width: 900px){
-        padding-left: 70px;
-    }
+            padding-left: 70px;
+        }
 
     @media screen and (min-width: 1255px){
-        padding-left: 40px;
-        padding-right: 20px;
-    }
+            padding-left: 45px;
+            padding-right: 20px;
+            font-size: 19px;
+        }
        
     }
 }
