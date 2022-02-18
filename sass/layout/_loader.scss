@@ -9,7 +9,7 @@
     width: 100%; 
     display: flex;
     justify-content: center;
-    animation: fadeOut 10s forwards;
+    animation: fadeOut 5s forwards;
 }
 
 @keyframes fadeOut {
@@ -18,7 +18,7 @@
         visibility: hidden;
     }
 
-    30% {
+    75% {
         opacity: 1;
     }
 }
