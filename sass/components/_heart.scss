@@ -9,8 +9,6 @@
     z-index: 1;
     display: block;
    
-
-
     @media screen and (min-width: 575px) {
         margin: 25px 25px 0 0;
     } 
@@ -21,6 +19,8 @@
 
     i.fas.fa-heart {
         display: none;
+        background: linear-gradient(195deg, $primary-color 20%, $secondary-color 90%);
+        opacity: 0;
     }
     
     &:hover i.far.fa-heart {
@@ -30,25 +30,56 @@
 
     &:hover i.fas.fa-heart {
         display: block;
-        @include background-like;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: 1s ease-in-out;
+        animation: hidden 0.7s forwards;
+    }
+}
+
+@keyframes hidden { ///////////////// Rename
+    0% {
+        opacity: 0%;
     }
 
+    16% {
+        opacity: 2%;
+    }
+
+    30% {
+        opacity: 9%;
+    }
+
+    40% {
+        opacity: 19%;
+    }
+
+    53% {
+        opacity: 50%;
+    }
+
+    60% {
+        opacity: 74%;
+    }
+
+    67% {
+        opacity: 93%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
 }
 
 // menus
 
 .menu-title__heart {
-    display: flex;
-    justify-content: flex-end;
     font-size: 27px;
     z-index: 1;
     position: absolute;
     top: 19px;
     right: 29px;
+    cursor: pointer;
 
     @media screen and (min-width: 575px) {
         font-size: 30px;
@@ -56,13 +87,14 @@
         
     }
 
-
     i.far.fa-heart {
         display: block;
     }
 
     i.fas.fa-heart {
         display: none;
+        background: linear-gradient(195deg, $primary-color 20%, $secondary-color 90%);
+        opacity: 0;
     }
     
     &:hover i.far.fa-heart {
@@ -72,10 +104,9 @@
 
     &:hover i.fas.fa-heart {
         display: block;
-        @include background-like;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        transition: 1s ease-in-out;
+        animation: hidden 0.7s forwards;
     }
 }
