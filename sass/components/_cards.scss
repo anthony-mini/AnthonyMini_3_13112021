@@ -103,6 +103,7 @@
         height: 70%;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
+        z-index: 1;
     }
 
     &__nouveau {
@@ -115,9 +116,9 @@
         position: absolute;
         top: 10px;
         right: 10px;
-
         font-size: 15px;
         font-weight: 520;
+        z-index: 1;
     }
 
     &__details {
@@ -126,6 +127,7 @@
 
         &--txt {
             margin: 15px 0px 0px 15px;
+            z-index: 1;
         }
 
         &--main {
@@ -159,5 +161,24 @@
                 font-size: 19px;
             }
         }
+    }
+}
+
+// Animation Cards
+
+.cards {
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 20px;
+    }
+
+    &:hover::after {
+        animation: shadow 300ms ease-in forwards;
     }
 }
