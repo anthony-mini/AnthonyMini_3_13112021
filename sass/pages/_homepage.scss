@@ -110,20 +110,21 @@
         &--icon {
             color: grey;
             position: absolute;
-            left: 60px;
+            left: 35px;
             font-size: 18px;
+            z-index: 2;
 
             @media screen and (min-width: 575px) {
                 font-size: 22px;
-                left: 80px;
+                left: 35px;
             }
 
             @media screen and (min-width: 700px) {
-                left: 90px;
+                left: 35px;
             }
 
             @media screen and (min-width: 900px) {
-                left: 150px;
+                left: 40px;
             }
 
             @media screen and (min-width: 1255px) {
@@ -142,6 +143,7 @@
         left: 18px;
         font-size: 14px;
         font-weight: 500;
+        z-index: 2;
 
         @media screen and (min-width: 575px) {
             font-size: 20px;
@@ -166,8 +168,9 @@
     &__txt {
        display: flex;
        justify-content: flex-start;
-       padding-left: 50px;
+       padding-left: 55px;
        font-size: 16px;
+       z-index: 2;
 
        @media screen and (min-width: 575px){
            font-size: 20px;
@@ -183,5 +186,72 @@
             font-size: 19px;
         }
        
+    }
+}
+
+
+//Animation option list 
+
+.opt-list {
+    &__btn{
+        position: relative;
+        
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            background-color: #F5EDFF;
+            border-radius: 18px;
+        }
+
+        &:hover::after{
+            animation: color 0.35s forwards;    
+        }
+
+        &--icon {
+            transition: color 0.35s;
+        }
+
+        &:hover .opt-list__btn--icon {
+            color: $primary-color;
+        }
+    }
+}
+
+@keyframes color {
+    0% {
+        opacity: 0%;
+    }
+
+    16% {
+        opacity: 2%;
+    }
+
+    30% {
+        opacity: 9%;
+    }
+
+    40% {
+        opacity: 19%;
+    }
+
+    53% {
+        opacity: 50%;
+    }
+
+    60% {
+        opacity: 74%;
+    }
+
+    67% {
+        opacity: 93%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
