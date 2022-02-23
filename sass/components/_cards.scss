@@ -133,6 +133,10 @@
             font-size: 18.5px;
             font-weight: 600;
 
+            &:hover {
+                text-decoration: underline;
+            }
+
             @media screen and (min-width: 575px) {
                 font-size: 23px;
             }
