@@ -497,6 +497,7 @@ main {
 @media screen and (min-width: 900px) {
   .tab {
     min-width: 390px;
+    max-width: 390px;
   }
 }
 .tab__details {
