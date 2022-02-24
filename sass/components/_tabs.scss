@@ -5,11 +5,12 @@
     align-items: center;
     justify-content: flex-start;
     height: 65px;
-    width: 100%;;
+    width: 100%;
     border-radius: 18px;
     cursor: pointer;
     padding: 10px 10px 10px 10px;
     margin: 15px 0;
+    @include text-overflow;
 
     @media screen and (min-width: 900px){
         min-width: 390px;
@@ -19,6 +20,7 @@
         display: flex;
         flex-direction: column;
         flex: 1;
+        @include text-overflow;
 
 
         &--main{
@@ -47,7 +49,7 @@
         }
 
         &--price {
-            margin-right: 10px;
+            margin-right: 25px;
             font-weight: 550;
             font-size: 15px;
             padding-top: 25px;
@@ -60,7 +62,7 @@
 }
 
 
-// ANIMATION 
+// ANIMATION DEROULER
 
 .tab {
     animation: unroll 0.6s;
@@ -77,11 +79,13 @@
 
 @keyframes unroll {
     0% {
-        transform: scale(0);
+        // transform: scale(0);
+        opacity: 0%;
     }
 
     100% {
-        transform: scale(1);
+        // transform: scale(1);
+        opacity: 100%;
     }
 }
 
@@ -119,4 +123,41 @@
 
 .step-8 {
     animation-delay: 1.7s;
+}
+
+// ANIMATION CHECK
+
+.tab__check {
+    background-color: $tertiary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 63px;
+    height: 100px;
+    margin: 0px -85px 0px 0px;
+    transition: .6s;
+
+    &--spin{
+        transform: rotate(75deg);
+        transition-duration: 0.6s;
+    }
+
+    &--icon {
+        background-color: white;
+        color: $tertiary-color;
+        border-radius: 100%;
+        padding: 3.5px;
+        font-size: 14px;
+        text-align: center;
+    }
+  
+}
+
+.tab:hover .tab__check {
+    margin-right: -13px;
+}
+
+.tab:hover .tab__check--spin {
+    transform: rotate(360deg);
+    transition-delay: 0.2s;
 }

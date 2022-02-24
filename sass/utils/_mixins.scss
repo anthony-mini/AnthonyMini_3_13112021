@@ -50,4 +50,8 @@
     margin-inline-end: 30px;
 }
 
-// btn option // 
+@mixin text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
