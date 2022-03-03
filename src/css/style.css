@@ -1133,7 +1133,7 @@ header {
 }
 @media screen and (min-width: 1255px) {
   header {
-    position: static;
+    position: relative;
   }
 }
 header a {
