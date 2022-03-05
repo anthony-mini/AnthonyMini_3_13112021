@@ -1,4 +1,4 @@
-// Section explore 
+// SECTION EXPLORE
 
 .container-explore {
     @include FlexColumnCenter;
@@ -36,7 +36,7 @@
     }   
 }
 
-// Section function
+// SECTION FUNCTION
 
 .container-opt {
     @include FlexColumn;
@@ -190,7 +190,7 @@
 }
 
 
-//Animation option list 
+// ANIMATION OPTION LIST
 
 .opt-list {
     &__btn{
@@ -221,6 +221,8 @@
         }
     }
 }
+
+// KEYFRAMES
 
 @keyframes color {
     0% {
