@@ -1,13 +1,9 @@
-// home
+// HOME
 
 .cards__icon--heart {
-
-    display: flex;
-    justify-content: flex-end;
     font-size: 27px;
     margin: 19px 25px 0 0;
     z-index: 1;
-    display: block;
    
     @media screen and (min-width: 575px) {
         margin: 25px 25px 0 0;
@@ -37,45 +33,10 @@
     }
 }
 
-@keyframes hidden { ///////////////// Rename
-    0% {
-        opacity: 0%;
-    }
-
-    16% {
-        opacity: 2%;
-    }
-
-    30% {
-        opacity: 9%;
-    }
-
-    40% {
-        opacity: 19%;
-    }
-
-    53% {
-        opacity: 50%;
-    }
-
-    60% {
-        opacity: 74%;
-    }
-
-    67% {
-        opacity: 93%;
-    }
-
-    100% {
-        opacity: 100%;
-    }
-}
-
-// menus
+// MENUS
 
 .menu-title__heart {
     font-size: 24px;
-    z-index: 1;
     position: absolute;
     top: 22px;
     right: 27px;
@@ -108,5 +69,41 @@
         -webkit-background-clip: text;
         color: transparent;
         animation: hidden 0.7s forwards;
+    }
+}
+
+// KEYFRAMES
+
+@keyframes hidden {
+    0% {
+        opacity: 0%;
+    }
+
+    16% {
+        opacity: 2%;
+    }
+
+    30% {
+        opacity: 9%;
+    }
+
+    40% {
+        opacity: 19%;
+    }
+
+    53% {
+        opacity: 50%;
+    }
+
+    60% {
+        opacity: 74%;
+    }
+
+    67% {
+        opacity: 93%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
