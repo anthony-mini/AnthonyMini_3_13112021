@@ -1,4 +1,4 @@
-// Btn Accueil
+// BTN HOME
 
 .container-explore__btn {
     @include background-btn;
@@ -22,8 +22,7 @@
 }
 
 
-// Btn Menus
-
+// BTN MENUS
 
 .container-btn-menu {
     @include FlexCenter;
@@ -49,10 +48,9 @@
         height: 55px;
         width: 200px;
     }
-
 }
 
-// Animation Btn Accueil 
+// ANIMATION BTN HOME
 
 .container-explore__btn {
     transition: transform 0.5s;
@@ -80,27 +78,7 @@
     }
 }
 
-@keyframes shadow {
-    0% {
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.30);
-    }
-
-    100% {
-        box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.45);
-    }
-}
-
-@keyframes opacity {
-    0% {
-        opacity: 100%;
-    }
-
-    100% {
-        opacity: 85%;
-    }
-}
-
-// Animation Btn Menus
+// ANIMATION BTN MENUS
 
 .btn-menu {
     transition: transform 0.5s;
@@ -127,6 +105,8 @@
         animation: shadow 0.5s forwards;
     }
 }
+
+// KEYFRAMES
 
 @keyframes shadow {
     0% {
