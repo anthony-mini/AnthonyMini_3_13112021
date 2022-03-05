@@ -1,6 +1,5 @@
 @import "./base/reset";
 @import "./base/base";
-@import "./base/typography";
 
 @import "./utils/variables";
 @import "./utils/functions";
@@ -11,7 +10,7 @@
 @import "./components/buttons";
 @import "./components/tabs";
 @import "./components/cards";
-@import "./components/cards__img--position";
+@import "./components/cards-img-position";
 @import "./components/heart";
 
 @import "./layout/loader";
